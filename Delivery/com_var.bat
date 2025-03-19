@@ -1,0 +1,1 @@
+set COMPORT=COM13

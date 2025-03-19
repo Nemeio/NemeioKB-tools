@@ -1,0 +1,115 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Images\arrowDown.svg" />
+    <None Remove="Resources\Images\arrowLeft.svg" />
+    <None Remove="Resources\Images\arrowRight.svg" />
+    <None Remove="Resources\Images\arrowUp.svg" />
+    <None Remove="Resources\Images\backspace.svg" />
+    <None Remove="Resources\Images\capslock.svg" />
+    <None Remove="Resources\Images\cmd.svg" />
+    <None Remove="Resources\Images\diagonaluparrow.svg" />
+    <None Remove="Resources\Images\maj.svg" />
+    <None Remove="Resources\Images\menu.svg" />
+    <None Remove="Resources\Images\mic.svg" />
+    <None Remove="Resources\Images\moon.svg" />
+    <None Remove="Resources\Images\mute.svg" />
+    <None Remove="Resources\Images\project.svg" />
+    <None Remove="Resources\Images\return.svg" />
+    <None Remove="Resources\Images\screenshot.svg" />
+    <None Remove="Resources\Images\search.svg" />
+    <None Remove="Resources\Images\soundHigh.svg" />
+    <None Remove="Resources\Images\soundLow.svg" />
+    <None Remove="Resources\Images\sunhigh.svg" />
+    <None Remove="Resources\Images\sunlow.svg" />
+    <None Remove="Resources\Images\tab.svg" />
+    <None Remove="Resources\Images\windows.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\arrowDown.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\arrowLeft.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\arrowRight.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\arrowUp.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\backspace.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\capslock.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\cmd.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\diagonaluparrow.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\maj.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\menu.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\mic.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\moon.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\mute.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\project.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\return.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\screenshot.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\search.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\soundHigh.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\soundLow.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\sunhigh.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\sunlow.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\tab.svg">
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Images\windows.svg">
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SkiaSharp" Version="1.60.0" />
+    <PackageReference Include="SkiaSharp.Svg" Version="1.60.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nemeio.Core\Nemeio.Core.csproj" />
+  </ItemGroup>
+
+</Project>

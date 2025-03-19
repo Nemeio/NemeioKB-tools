@@ -1,0 +1,20 @@
+*.pyc
+*.py.bak
+
+# Virtualenv
+venv/
+
+# Build
+build/
+dist/
+nrfutil.egg-info/
+
+# Test artefacts
+/nordicsemi/dfu/tests/mypackage.zip
+/tests/test.zip
+.eggs/
+unittests.xml
+
+
+# Ignore vscode settings and debug-options
+.vscode/

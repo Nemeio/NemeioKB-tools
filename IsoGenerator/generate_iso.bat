@@ -1,0 +1,1 @@
+bin\mkisofs.exe -J -o karmeliet.iso .\iso_input
